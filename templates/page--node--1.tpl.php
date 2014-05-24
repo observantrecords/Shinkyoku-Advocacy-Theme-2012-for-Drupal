@@ -1,6 +1,6 @@
-		<div id="container">
-			<div id="masthead" class="centered">
-				<header>
+		<div id="container" class="container">
+			<div id="masthead" class="centered row">
+				<header class="col-md-12">
 					<?php if ($site_name): ?>
 					<h1 id="title">
 						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
@@ -11,8 +11,8 @@
 				</header>
 			</div>
 
-			<div id="content">
-				<div class="full-column">
+			<div id="content" class="row">
+				<div class="full-column col-md-12">
 				<?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
 				<a id="main-content"></a>
 				<?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
