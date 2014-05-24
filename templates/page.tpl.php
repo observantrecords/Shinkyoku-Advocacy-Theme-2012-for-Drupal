@@ -1,6 +1,6 @@
-		<div id="container">
-			<div id="masthead" class="prepend-top">
-				<header class="centered">
+		<div id="container" class="container">
+			<div id="masthead" class="row">
+				<header class="centered col-md-12">
 					<?php if ($site_name): ?>
 					<h1 id="title">
 						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
@@ -10,15 +10,15 @@
 					<?php endif; ?>
 				</header>
 
-				<nav id="nav-main">
+				<nav id="nav-main" class="col-md-12">
 					<?php if ($main_menu): ?>
 					<?php print theme('links__system_main_menu', array('links' => $main_menu)); ?>
 					<?php endif; ?>
 				</nav>
 			</div>
 
-			<div id="content">
-				<div class="full-column">
+			<div id="content" class="row">
+				<div class="full-column col-md-12">
 				<?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
 				<a id="main-content"></a>
 				<?php print render($title_prefix); ?>
